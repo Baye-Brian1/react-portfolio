@@ -13,7 +13,7 @@ import {faGithub, faJs, faCss3, faHtml5} from '@fortawesome/free-brands-svg-icon
     <>
       <main>
       <section className="container1">
-       <h1>Hello! I’m Baye Brian</h1>, 
+       <h1>Hello! I’m Baye Brian,</h1>
        <p>I'm a passionate <span class="white"> Front-end Developer</span> and love building modern and responsive web interfaces. I have completed an internship in web development where I specialized in Front-end Development using HTML, CSS, Tailwind CSS, and JavaScript. I enjoy creating clean, user-friendly websites and constantly learning new technologies to improve my skills.</p>
 
        <p>I focus on writing semantic, maintainable code and I love turning design ideas into fully functional web applications. My goal is to build impactful digital experiences and continue growing as a developer.</p>
