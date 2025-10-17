@@ -28,7 +28,7 @@ function App() {
     <BrowserRouter>
       <Header lightMode={lightMode} toggleTheme={toggleTheme} />
       <Routes>
-        <Route path="/index" element={<Index />} />
+        <Route path="/" element={<Index />} />
         <Route path="/project" element={<Project />} />
         <Route path="/technology" element={<Technology />} />
         <Route path="/experience" element={<Experience />} />

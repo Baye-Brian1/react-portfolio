@@ -15,7 +15,7 @@ function Header({toggleTheme, lightMode}) {
   return(
     <header>
     <div className="container navbar">
-      <div className="logo" ><Link to="/index">Brian</Link></div>
+      <div className="logo" ><Link to="/">Brian</Link></div>
         <nav className={`navbarr ${open?'show':""}`}>
         <Link to="/project">Projects</Link>
         <Link to="/technology">Technologies</Link>
