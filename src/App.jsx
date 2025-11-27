@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import './App.css';
+import React from 'react';
+// import './App.css'; // REMOVED: Styles are now handled by Tailwind utilities and theme files
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/header';
 import Index from './pages/index'
@@ -9,24 +9,9 @@ import Experience from './pages/experience';
 import Contact from './pages/contact';
 
 function App() {
-  const [lightMode, setLightMode] = useState(() => {
-    const savedTheme = localStorage.getItem('theme');
-    return savedTheme === 'light'; // returns true or false
-  });
-
-  useEffect(() => {
-    localStorage.setItem('theme', lightMode ? 'light' : 'dark');
-    document.body.classList.toggle("light-mode")
-  }, [lightMode]);
-
-  const toggleTheme = () => {
-     console.log("Toggle clicked");
-    setLightMode((prev) => !prev);
-  };
-
   return (
     <BrowserRouter>
-      <Header lightMode={lightMode} toggleTheme={toggleTheme} />
+      <Header/>
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/project" element={<Project />} />

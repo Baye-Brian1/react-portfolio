@@ -1,72 +1,74 @@
 import React from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { Github, Code, Palette, FileText, Component, Zap } from 'lucide-react'; // Lucide Icons
 import Vercel from '../assets/Vercel.png'
 import Netlify from '../assets/netlify.svg'
 import Tailwind from '../assets/download.png'
-import {faGithub,  faJs, faCss3, faHtml5} from '@fortawesome/free-brands-svg-icons';
+import reactImage from '../assets/react.svg'
 
 function MainTech() {
   return(
-    <>
-  <main>
-    <div className="container3">
-       <h1>Technology</h1>
-      <div className="grid">
-        <div className="projects">
-          <div className="icx">
-            <FontAwesomeIcon icon={faHtml5} className="fa-brands fa-html5"/>
+    <main>
+      <div className="max-w-4xl min-h-screen mx-auto text-gray-700 dark:text-gray-400 p-5 pt-20">
+        <h1 className="text-gray-900 dark:text-white text-xl mb-10">Stacks !</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 p-5 md:px-16 gap-5">
+          
+          {/* HTML Stack */}
+          <div className="cursor-pointer p-1.5 rounded-xl border border-gray-300 dark:border-gray-800 w-full h-[250px] text-left bg-white dark:bg-gray-900/50 shadow-md dark:shadow-none hover:border-gray-400 dark:hover:border-gray-700 transition">
+            <div className="flex bg-gray-100 dark:bg-gray-800 justify-center items-center mb-4 w-full h-40 border border-gray-300 dark:border-gray-800 rounded-lg text-5xl text-red-500">
+              <FileText size={50}/> {/* Replaced faHtml5 with FileText */}
+            </div>
+            <h2 className="font-semibold text-gray-900 dark:text-gray-50 mb-[-10px] text-lg pl-1.5">HTML</h2>
+            <p className="text-sm pl-1.5 text-gray-600 dark:text-gray-400">The Genesis of Web Dev</p>
           </div>
-          <h2>HTML</h2>
-          <p>The Genesis of Web Dev</p>
-        </div>
-        <div className="projects">
-          <div className="icx">
-            <FontAwesomeIcon icon={faCss3} className="fa-brands fa-css3"/>
+          
+          {/* CSS Stack */}
+          <div className="cursor-pointer p-1.5 rounded-xl border border-gray-300 dark:border-gray-800 w-full h-[250px] text-left bg-white dark:bg-gray-900/50 shadow-md dark:shadow-none hover:border-gray-400 dark:hover:border-gray-700 transition">
+            <div className="flex bg-gray-100 dark:bg-gray-800 justify-center items-center mb-4 w-full h-40 border border-gray-300 dark:border-gray-800 rounded-lg text-5xl text-blue-500">
+              <Palette size={50}/> {/* Replaced faCss3 with Palette */}
+            </div>
+            <h2 className="font-semibold text-gray-900 dark:text-gray-50 mb-[-10px] text-lg pl-1.5">CSS</h2>
+            <p className="text-sm pl-1.5 text-gray-600 dark:text-gray-400">Styling Upon Styling</p>
           </div>
-          <h2>CSS</h2>
-          <p>Styling Upon Styling</p>
-        </div>
-        <div className="projects">
-          <div className="icx">
-            <FontAwesomeIcon icon={faJs} className="fa-brands fa-js"/>
+          
+          {/* JavaScript Stack */}
+          <div className="cursor-pointer p-1.5 rounded-xl border border-gray-300 dark:border-gray-800 w-full h-[250px] text-left bg-white dark:bg-gray-900/50 shadow-md dark:shadow-none hover:border-gray-400 dark:hover:border-gray-700 transition">
+            <div className="flex bg-gray-100 dark:bg-gray-800 justify-center items-center mb-4 w-full h-40 border border-gray-300 dark:border-gray-800 rounded-lg text-5xl text-yellow-500">
+              <Code size={50}/> {/* Replaced faJs with Code */}
+            </div>
+            <h2 className="font-semibold text-gray-900 dark:text-gray-50 mb-[-10px] text-lg pl-1.5">JavaScript</h2>
+            <p className="text-sm pl-1.5 text-gray-600 dark:text-gray-400">To boost Web Interactivity</p>
           </div>
-          <h2>JavaScript</h2>
-          <p>To boost Web Interactivity</p>
-        </div>
-        <div className="projects">
-          <div className="icx">
-            <FontAwesomeIcon icon={faGithub} className="fa-brands fa-github"/>
+          
+          {/* Github Stack */}
+          <div className="cursor-pointer p-1.5 rounded-xl border border-gray-300 dark:border-gray-800 w-full h-[250px] text-left bg-white dark:bg-gray-900/50 shadow-md dark:shadow-none hover:border-gray-400 dark:hover:border-gray-700 transition">
+            <div className="flex bg-gray-100 dark:bg-gray-800 justify-center items-center mb-4 w-full h-40 border border-gray-300 dark:border-gray-800 rounded-lg text-5xl text-gray-900 dark:text-white">
+              <Github size={50}/> {/* Replaced faGithub with Github */}
+            </div>
+            <h2 className="font-semibold text-gray-900 dark:text-gray-50 mb-[-10px] text-lg pl-1.5">Github</h2>
+            <p className="text-sm pl-1.5 text-gray-600 dark:text-gray-400">Hardwork through commits</p>
           </div>
-          <h2>Github</h2>
-          <p>Hardwork through commits</p>
-        </div>
-        <div className="projects">
-          <div className="icxx">
-            <img src={Vercel} alt="vercel" className="imgx"/>
+          
+          {/* React Stack */}
+          <div className="cursor-pointer p-1.5 rounded-xl border border-gray-300 dark:border-gray-800 w-full h-[250px] text-left bg-white dark:bg-gray-900/50 shadow-md dark:shadow-none hover:border-gray-400 dark:hover:border-gray-700 transition">
+            <div className="flex bg-gray-100 dark:bg-gray-800 justify-center items-center mb-4 w-full h-40 border border-gray-300 dark:border-gray-800 rounded-lg">
+              <img src={reactImage} alt="react" className="flex justify-center mx-auto w-[70px] h-[70px] rounded-xl"/>
+            </div>
+            <h2 className="font-semibold text-gray-900 dark:text-gray-50 mb-[-10px] text-lg pl-1.5">React</h2>
+            <p className="text-sm pl-1.5 text-gray-600 dark:text-gray-400">Components and User Core Interface</p>
           </div>
-          <h2>Vercel</h2>
-          <p>Hosted Most projects on vercel</p>
-        </div>
-        <div className="projects">
-          <div className="icxx">
-            <img src={Netlify} alt="netlify" className="imgx"/>
+          
+          {/* Tailwind CSS Stack */}
+          <div className="cursor-pointer p-1.5 rounded-xl border border-gray-300 dark:border-gray-800 w-full h-[250px] text-left bg-white dark:bg-gray-900/50 shadow-md dark:shadow-none hover:border-gray-400 dark:hover:border-gray-700 transition">
+            <div className="flex bg-gray-100 dark:bg-gray-800 justify-center items-center mb-4 w-full h-40 border border-gray-300 dark:border-gray-800 rounded-lg">
+              <img src={Tailwind} alt="tailwindcss" className="flex justify-center mx-auto w-[70px] h-[70px] rounded-xl"/>
+            </div>
+            <h2 className="font-semibold text-gray-900 dark:text-gray-50 mb-[-10px] text-lg pl-1.5">Tailwind css</h2>
+            <p className="text-sm pl-1.5 text-gray-600 dark:text-gray-400">Good and Responsive UI</p>
           </div>
-          <h2>Netlify</h2>
-          <p>Hosted on Netlify</p>
         </div>
-        <div className="projects">
-          <div className="icxx">
-            <img src={Tailwind} alt="tailwindcss" className="imgx"/>
-          </div>
-            <h2>Tailwind css</h2>
-            <p>Good and Responsive UI</p>
-        </div>
-      </div>
-    </div>  
-    <div className="line"></div>
-  </main>
-    </>
+      </div> 	
+      <div className="max-w-4xl mx-auto border-b border-gray-300 dark:border-gray-800"></div>
+    </main>
   );
 } 
 export default MainTech;
-

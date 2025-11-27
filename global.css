@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar Styles (Cannot be converted to Tailwind utilities) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light Mode Track */
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc; /* Light Mode Thumb */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Dark Mode Scrollbar Styles */
+.dark ::-webkit-scrollbar-track {
+  background: #111;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #444;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}

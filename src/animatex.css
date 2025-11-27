@@ -1,0 +1,54 @@
+
+@import "tailwindcss";
+
+/* V4 dark class control */
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+/* dark and light styles */
+:root{
+  --background: #f7f4f4;
+  --foreground: #0b0b0f;
+}
+.dark{
+  --background: #0b0b0f;
+  --foreground: rgb(247, 244, 244);
+}
+
+body{
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s, color 0.3s;
+}
+/* View Transition Theme Toggler Animation */
+
+::view-transition-group(root) {
+  animation-timing-function: var(--expo-out);
+}
+
+::view-transition-new(root) {
+  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><filter id="blur"><feGaussianBlur stdDeviation="2"/></filter></defs><circle cx="0" cy="0" r="18" fill="white" filter="url(%23blur)"/></svg>') top left / 0 no-repeat;
+  animation: scale 1s;
+  animation-fill-mode: both;
+  transform-origin: top left;
+  mask-origin: content-box;
+}
+
+::view-transition-old(root),
+.dark::view-transition-old(root) {
+  animation: none;
+  animation-fill-mode: both;
+  transform-origin: top left;
+  z-index: -1;
+}
+/* .dark::view-transition-new(root) {
+  animation: scale 1s;
+  animation-fill-mode: both;
+} */
+
+@keyframes scale {
+  to {
+    mask-size: 350vmax;
+  }
+}
+
