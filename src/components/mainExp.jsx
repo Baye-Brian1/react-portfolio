@@ -1,12 +1,15 @@
 import React from "react";
 import ReadMoreText from "./traitz";
 import Read from "./tic"
+import { Sparkles } from "lucide-react";
 
 function MainExp() {
   return(
     <main>
       <section className="max-w-4xl min-h-screen mx-auto text-gray-700 dark:text-gray-400 p-5 pt-20">
-        <h1 className="text-gray-900 dark:text-white text-xl mb-10">Experience !</h1>
+        <h1 className="text-gray-900 dark:text-white text-xl mb-5 mt-10 flex items-center gap-2">
+          Experience<Sparkles size={20} className="inline"/>
+          </h1>
         
         {/* Experience Card 1 */}
         <div className="bg-white dark:bg-transparent p-6 rounded-xl shadow-lg shadow-gray-300 dark:shadow-gray-900/50 mb-8 transition-all duration-200 border border-transparent dark:border-gray-800 hover:-translate-y-1 hover:shadow-xl hover:shadow-gray-400 dark:hover:shadow-gray-800">

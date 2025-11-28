@@ -1,11 +1,13 @@
 import React from "react";
-import { Linkedin } from "lucide-react"; // Lucide Icon
+import { Linkedin,MessageCircleCode } from "lucide-react"; // Lucide Icon
 
 function MainCont() {
   return(
     <main>
       <section className="max-w-4xl min-h-screen mx-auto text-gray-700 dark:text-gray-400 p-5 pt-20">
-        <h1 className="text-gray-900 dark:text-white text-xl">Wanna Chat !</h1>
+        <h1 className="text-gray-900 dark:text-white text-xl mt-5 flex items-center gap-2">
+          Wanna Chat <MessageCircleCode size={20} className="inline"/>
+          </h1>
         <form className="flex flex-col rounded-[15px] mx-auto justify-center w-full md:w-[600px] h-[400px] shadow-lg shadow-gray-300 dark:shadow-gray-900/50 p-5 items-center bg-white dark:bg-gray-950/50 mt-10">
           <input type="text" placeholder="Name" required className="bg-transparent text-gray-900 dark:text-white w-full md:w-[500px] my-2.5 p-2.5 border-none outline-none border-b border-gray-300 dark:border-gray-600/30"/>
           <input type="tel" placeholder="Phone Number" required className="bg-transparent text-gray-900 dark:text-white w-full md:w-[500px] my-2.5 p-2.5 border-none outline-none border-b border-gray-300 dark:border-gray-600/30"/>

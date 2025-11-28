@@ -4,14 +4,14 @@ import Vercel from '../assets/Vercel.png'
 import Netlify from '../assets/netlify.svg'
 import Tailwind from '../assets/download.png'
 import reactImage from '../assets/react.svg'
-import { Sparkles } from 'lucide-react';
+import { Code2 } from 'lucide-react';
 
 function MainTech() {
   return(
     <main>
       <div className="max-w-4xl min-h-screen mx-auto text-gray-700 dark:text-gray-400 p-5 pt-20">
-        <h1 className="text-gray-900 dark:text-white text-xl mt-10">
-          Stacks 
+        <h1 className="text-gray-900 dark:text-white text-xl mt-10 flex items-center gap-2">
+          Stacks <Code2 size={20} className='inline'/>
           </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 p-5 md:px-16 gap-5">
           

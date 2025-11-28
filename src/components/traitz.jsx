@@ -28,7 +28,7 @@ const ReadMoreText = ({limit=200}) =>{
       <>
        {reduceText}
         {text.length>limit &&(
-          <p className="flex items-center gap-1 cursor-pointer text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition" onClick={()=>setExpanded(true)}>
+          <p className="flex items-center gap-1 cursor-pointer text-white dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition" onClick={()=>setExpanded(true)}>
             Read More <ArrowRight size={16}/>
           </p>
         )}

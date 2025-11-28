@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Pin, Code, Sparkles, Palette, FileText } from 'lucide-react'; // Lucide Icons
+import { ArrowRight, Pin, Code,Code2, Sparkles, Palette, FileText } from 'lucide-react'; // Lucide Icons
 import user from '../assets/user.PNG';
 import todo from '../assets/todo.PNG';
 import { Link } from 'react-router-dom';
@@ -9,7 +9,8 @@ function MainBody() {
   return (
     <main className="flex-1">
       <section className="max-w-4xl min-h-[60vh] mx-auto text-gray-700 dark:text-gray-400 p-5 pt-20">
-        <h1 className="mt-5 text-gray-900 dark:text-white text-xl">Hello! I’m Baye Brian,</h1>
+        <h1 className="mt-5 text-gray-900 dark:text-white text-xl flex items-center gap-2">Hello! I’m Baye Brian <Sparkles size={20}/>
+        </h1>
         <p className="leading-relaxed text-base mb-5">
           I'm a passionate <span className="text-gray-900 dark:text-inherit">Front-end Developer</span> and love building modern and responsive web interfaces. I have completed an internship in web development where I specialized in Front-end Development using HTML, CSS, Tailwind CSS, and JavaScript. I enjoy creating clean, user-friendly websites and constantly learning new technologies to improve my skills.
         </p>
@@ -21,7 +22,7 @@ function MainBody() {
       <section className="max-w-4xl min-h-screen mx-auto text-gray-700 dark:text-gray-400 p-5">
         <span className="w-full flex items-center justify-between">
           <h1 className="text-gray-900 dark:text-white text-xl flex items-center gap-2">
-            Recent Projects <Pin size={20} className='inline rotate-12 text-white' />
+            Recent Projects <Pin size={20} className='inline rotate-12' />
           </h1>
           <Link to="/project">
             <p className='text-white hover:text-gray-700 dark:hover:text-gray-400 transition no-underline flex items-center gap-1'>
@@ -55,7 +56,7 @@ function MainBody() {
       <section className="max-w-4xl min-h-screen mx-auto text-gray-700 dark:text-gray-400 p-5">
         <span className='w-full flex items-center justify-between'>
           <h1 className="text-gray-900 dark:text-white text-xl items-center flex gap-2">
-            Stacks <Sparkles size={22} className='inline text-white'/> 
+            Stacks <Code2 size={22} className='inline'/> 
             </h1>
           <Link to="/technology">
             <p className='text-white hover:text-gray-700 dark:hover:text-gray-400 transition no-underline flex items-center gap-1'>
