@@ -10,7 +10,7 @@ function Header() {
   return (
     // FIX 1: Added background color (bg-white/95) and dark mode background (dark:bg-[#0b0b0b]/95) 
     // to prevent content from showing through. Added backdrop-blur for a modern effect.
-    <header className="fixed top-0 left-0 w-full z-1000 bg-white/95 dark:bg-[#0b0b0b]/95 backdrop-blur-sm transition duration-300 dark:shadow-none">
+    <header className="fixed top-0 left-0 w-full z-1000 bg-white/9 dark:bg-[#0b0b0b]/95 backdrop-blur-sm transition duration-300 dark:shadow-none">
       <div className="max-w-4xl mx-auto px-5 py-5 flex justify-between items-center">
         {/* FIX: Corrected logo colors (text-gray-900 for Light Mode, dark:text-white for Dark Mode) */}
         <div className="text-gray-900 font-bold text-xl hover:text-gray-600 dark:text-white dark:hover:text-gray-400 transition">

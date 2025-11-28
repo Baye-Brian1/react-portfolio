@@ -81,7 +81,7 @@ function MainBody() {
               <Palette size={50} /> {/* Replaced faCss3 with Palette */}
             </div>
             <h2 className="font-semibold text-gray-900 dark:text-gray-50 mb-[-10px] text-xl p-1.5">CSS</h2>
-            <p className="text-md p-1.5 text-gray-600 dark:text-gray-400">worked with CSS on Numerous projects</p>
+            <p className="text-md p-1.5 text-gray-600 dark:text-gray-400">Worked alot on CSS</p>
           </div>
 
           {/* JavaScript Stack */}
