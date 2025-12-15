@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Pin, Code,Code2, Sparkles, Palette, FileText } from 'lucide-react'; // Lucide Icons
+import { ArrowRight, Pin, Code,Code2, Sparkles, Palette, FileText, Github } from 'lucide-react'; // Lucide Icons
 import user from '../assets/user.PNG';
 import todo from '../assets/todo.PNG';
 import { Link } from 'react-router-dom';
@@ -8,7 +8,7 @@ function MainBody() {
 
   return (
     <main className="flex-1">
-      <section className="max-w-4xl min-h-[60vh] mx-auto text-gray-700 dark:text-gray-400 p-5 pt-20">
+      <section className="max-w-4xl max-h-[60vh] mx-auto text-gray-700 dark:text-gray-400 p-5 pt-20">
         <h1 className="mt-5 text-gray-900 dark:text-white text-xl flex items-center gap-2">Hello! I’m Baye Brian <Sparkles size={20}/>
         </h1>
         <p className="leading-relaxed text-base mb-5">
@@ -19,9 +19,9 @@ function MainBody() {
         </p>
       </section>
 
-      <section className="max-w-4xl min-h-screen mx-auto text-gray-700 dark:text-gray-400 p-5">
+      <section className="max-w-4xl max-h-[60vh] mx-auto text-gray-700 dark:text-gray-400 p-5">
         <span className="w-full flex items-center justify-between">
-          <h1 className="text-gray-900 dark:text-white text-xl flex items-center gap-2">
+          <h1 className="text-gray-900 dark:text-white text-xl flex items-center gap-2 pb-1.5">
             Recent Projects <Pin size={20} className='inline rotate-12' />
           </h1>
           <Link to="/project">
@@ -32,16 +32,16 @@ function MainBody() {
         </span>
 
         <div className="grid grid-cols-1 md:grid-cols-2 p-5 md:px-16 gap-5">
-          {/* Project Card 1 */}
+         
+          {/* Random User Project */}
           <div className="cursor-pointer p-1 rounded-xl border border-gray-300 dark:border-gray-800 w-[94%] h-[250px] text-left bg-white dark:bg-gray-900/50 shadow-md dark:shadow-none hover:border-gray-400 dark:hover:border-gray-700 transition">
             <div className="flex bg-gray-100 dark:bg-gray-800 justify-center items-center mb-4 w-full h-40 border border-gray-300 dark:border-gray-800 rounded-lg">
-              <img src={todo} alt="main-design" className="w-full h-40 rounded-lg object-fill" />
+              <img src={todo} alt="alt" className="w-full h-40 rounded-lg object-fill" />
             </div>
             <h3 className="font-semibold text-gray-900 dark:text-gray-50 mb-[-10px] text-xl p-1.5">Todo-list</h3>
             <p className="text-md p-1.5 text-gray-600 dark:text-gray-400">Basic todo list built With React</p>
           </div>
 
-          {/* Project Card 2 */}
           <div className="cursor-pointer p-1 rounded-xl border border-gray-300 dark:border-gray-800 w-[94%] h-[250px] text-left bg-white dark:bg-gray-900/50 shadow-md dark:shadow-none hover:border-gray-400 dark:hover:border-gray-700 transition"
             onClick={() => window.location.href = 'https://random-user-git-main-baye-brian-s-projects.vercel.app/'}>
             <div className="flex bg-gray-100 dark:bg-gray-800 justify-center items-center mb-4 w-full h-40 border border-gray-300 dark:border-gray-800 rounded-lg">
@@ -50,7 +50,7 @@ function MainBody() {
             <h3 className="font-semibold text-gray-900 dark:text-gray-50 mb-[-10px] text-xl p-1.5">Random User</h3>
             <p className="text-md p-1.5 text-gray-600 dark:text-gray-400">Random User Generator</p>
           </div>
-        </div>
+        </div>  
       </section>
 
       <section className="max-w-4xl min-h-screen mx-auto text-gray-700 dark:text-gray-400 p-5">
@@ -66,32 +66,42 @@ function MainBody() {
         </span>
 
         <div className="grid grid-cols-1 md:grid-cols-2 p-5 md:px-16 gap-5">
-          {/* HTML Stack */}
+           {/* HTML Stack */}
           <div className="cursor-pointer p-1 rounded-xl border border-gray-300 dark:border-gray-800 w-[94%] h-[250px] text-left bg-white dark:bg-gray-900/50 shadow-md dark:shadow-none hover:border-gray-400 dark:hover:border-gray-700 transition">
-            <div className="flex bg-gray-100 dark:bg-gray-800 justify-center items-center mb-4 w-full h-40 border border-gray-300 dark:border-gray-800 rounded-lg text-5xl text-red-500">
-              <FileText size={50} /> {/* Replaced faHtml5 with FileText */}
+            <div className="flex bg-gray-100 dark:bg-gray-800 justify-center items-center mb-4 w-full h-40 border border-gray-300 dark:border-gray-800 rounded-lg text-5xl dark:text-white">
+              <FileText size={50}/> {/* Replaced faHtml5 with FileText */}
             </div>
-            <h2 className="font-semibold text-gray-900 dark:text-gray-50 mb-[-10px] text-xl p-1.5">HTML</h2>
-            <p className="text-md p-1 text-gray-600 dark:text-gray-400">HTML! Skeleton of Web Dev</p>
+            <h2 className="font-semibold text-gray-900 dark:text-gray-50 mb-[-10px] text-lg p-1.5">HTML</h2>
+            <p className="text-md p-1.5 text-gray-600 dark:text-gray-400">The Genesis of Web Dev</p>
           </div>
-
+          
           {/* CSS Stack */}
           <div className="cursor-pointer p-1.5 rounded-xl border border-gray-300 dark:border-gray-800 w-[94%] h-[250px] text-left bg-white dark:bg-gray-900/50 shadow-md dark:shadow-none hover:border-gray-400 dark:hover:border-gray-700 transition">
-            <div className="flex bg-gray-100 dark:bg-gray-800 justify-center items-center mb-4 w-full h-40 border border-gray-300 dark:border-gray-800 rounded-lg text-5xl text-blue-500">
-              <Palette size={50} /> {/* Replaced faCss3 with Palette */}
+            <div className="flex bg-gray-100 dark:bg-gray-800 justify-center items-center mb-4 w-full h-40 border border-gray-300 dark:border-gray-800 rounded-lg text-5xl dark:text-white">
+              <Palette size={50}/> {/* Replaced faCss3 with Palette */}
             </div>
-            <h2 className="font-semibold text-gray-900 dark:text-gray-50 mb-[-10px] text-xl p-1.5">CSS</h2>
-            <p className="text-md p-1.5 text-gray-600 dark:text-gray-400">Worked alot on CSS</p>
+            <h2 className="font-semibold text-gray-900 dark:text-gray-50 mb-[-10px] text-lg p-1.5">CSS</h2>
+            <p className="text-md p-1.5 text-gray-600 dark:text-gray-400">Styling Upon Styling</p>
           </div>
-
+          
           {/* JavaScript Stack */}
-          <div className="cursor-pointer p-1 rounded-xl border border-gray-300 dark:border-gray-800 w-[94%] h-[250px] text-left bg-white dark:bg-gray-900/50 shadow-md dark:shadow-none hover:border-gray-400 dark:hover:border-gray-700 transition">
-            <div className="flex bg-gray-100 dark:bg-gray-800 justify-center items-center mb-4 w-full h-40 border border-gray-300 dark:border-gray-800 rounded-lg text-5xl text-yellow-500">
-              <Code size={50} /> 
+          <div className="cursor-pointer p-1.5 rounded-xl border border-gray-300 dark:border-gray-800  w-[94%] h-[250px] text-left bg-white dark:bg-gray-900/50 shadow-md dark:shadow-none hover:border-gray-400 dark:hover:border-gray-700 transition">
+            <div className="flex bg-gray-100 dark:bg-gray-800 justify-center w-full items-center mb-4 h-40 border border-gray-300 dark:border-gray-800 rounded-lg text-5xl dark:text-white">
+              <Code size={50}/> {/* Replaced faJs with Code */}
             </div>
-            <h2 className="font-semibold text-gray-900 dark:text-gray-50 mb-[-10px] text-xl p-1.5">JavaScript</h2>
-            <p className="text-md p-1.5 text-gray-600 dark:text-gray-400">Build projects with JavaScript</p>
+            <h2 className="font-semibold text-gray-900 dark:text-gray-50 mb-[-10px] text-lg p-1.5">JavaScript</h2>
+            <p className="text-md p-1.5 text-gray-600 dark:text-gray-400">To boost Web Interactivity</p>
           </div>
+          
+          {/* Github Stack */}
+          <div className="cursor-pointer p-1.5 rounded-xl border border-gray-300 dark:border-gray-800 w-[94%] h-[250px] text-left bg-white dark:bg-gray-900/50 shadow-md dark:shadow-none hover:border-gray-400 dark:hover:border-gray-700 transition">
+            <div className="flex bg-gray-100 dark:bg-gray-800 justify-center items-center mb-4 w-full h-40 border border-gray-300 dark:border-gray-800 rounded-lg text-5xl text-gray-900 dark:text-white">
+              <Github size={50}/> {/* Replaced faGithub with Github */}
+            </div>
+            <h2 className="font-semibold text-gray-900 dark:text-gray-50 mb-[-10px] text-lg p-1.5">Github</h2>
+            <p className="text-md p-1.5 text-gray-600 dark:text-gray-400">Hardwork through commits</p>
+          </div>
+          
         </div>
       </section>
     </main>

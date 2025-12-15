@@ -17,7 +17,6 @@ const ReadMoreText = ({limit=200}) =>{
         
     {expanded?(
      <>
-       // ... (text display unchanged) ...
        {text}
         <p className="flex items-center gap-1 cursor-pointer text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition" onClick={()=>setExpanded(false)}>
           Read Less <ArrowRight size={16}/>
